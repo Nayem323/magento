@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="N23_Videoplayer::n23_videoplayer" title="Videoplayer" module="N23_Videoplayer" sortOrder="10" resource="N23_Videoplayer::n23_videoplayer" parent="N23_Core::all"/>
+		<add id="N23_Videoplayer::videoplayer" title="Manage Videoplayer" module="N23_Videoplayer" sortOrder="40" action="n23_videoplayer/videoplayer" resource="N23_Videoplayer::videoplayer" parent="N23_Videoplayer::n23_videoplayer"/>
+    </menu>
+</config>
+
+

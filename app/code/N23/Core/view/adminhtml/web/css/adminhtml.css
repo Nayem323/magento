@@ -1,0 +1,33 @@
+.admin__menu #menu-n23-core-all.level-0 > a:before {
+    /*content:url('../images/n23-logo.png');*/
+    /*background-image: url(../images/n23-logo.png);
+    background-size: 35px auto;
+    width: 35px;
+    height: 30px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    content: "";*/
+}
+/*.admin__menu #menu-n23-core-all.level-0:hover > a:before, .admin__menu #menu-n23-core-all.level-0._active > a:before {
+    background-image: url(../images/group-w.png);
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    content: "";
+}*/
+.admin__menu #menu-n23-core-all .submenu-title{
+    font-size: 2.0rem;
+}
+.admin__menu .submenu .item-n23-slider .parent .submenu-group-title {
+    display: block!important;
+}
+/*.n23-logo {
+	background-image: url('../images/group.png');
+	background-size: auto 20px;
+	background-repeat: no-repeat;
+	padding-left: 25px;
+}*/
+
+

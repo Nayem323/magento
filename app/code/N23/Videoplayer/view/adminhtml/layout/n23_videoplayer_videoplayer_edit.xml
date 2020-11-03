@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * N23_Videoplayer add row layout
+ * @category    N23
+ * @package     N23_Videoplayer
+ * @author      Nayem
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="styles"/>
+    <update handle="editor"/>
+    <body>
+        <referenceContainer name="content">
+            <block class="N23\Videoplayer\Block\Adminhtml\Videoplayer\Edit" name="videoplayer_edit" />
+        </referenceContainer>
+    </body>
+</page>

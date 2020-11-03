@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * N23_Videoplayer add row layout
+ * @category    N23
+ * @package     N23_Videoplayer
+ * @author      Nayem
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="n23_videoplayer_videoplayer_edit"/>
+</page>

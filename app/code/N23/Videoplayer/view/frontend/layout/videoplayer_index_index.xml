@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="N23_Videoplayer::css/n23-videoplayer.css" media="all"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="N23\Videoplayer\Block\Videoplayer" name="videoplayer_listing" template="N23_Videoplayer::listing.phtml" ifconfig="n23_videoplayer/general/enable"
+            />
+        </referenceContainer>
+    </body>
+</page>

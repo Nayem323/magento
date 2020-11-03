@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category N23
+ * @package N23\Core
+ * @author N23 <nayem323@gmail.com>
+ * @copyright Copyright (c) 2020 N23
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="N23_Core" setup_version="1.0.0"/>
+</config>

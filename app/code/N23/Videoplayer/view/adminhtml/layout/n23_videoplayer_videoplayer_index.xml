@@ -1,0 +1,9 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="styles"/>
+    <body>
+        <!--this code for ui_component-->
+        <referenceContainer name="content">
+            <uiComponent name="n23_videoplayer_videoplayer_listing"/>
+        </referenceContainer>
+    </body>
+</page>

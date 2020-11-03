@@ -1,0 +1,29 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="n23_videoplayer_videoplayer_listing_data_source" xsi:type="string">N23\Videoplayer\Model\ResourceModel\Videoplayer\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="N23\Videoplayer\Model\ResourceModel\Videoplayer\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">n23_videoplayer</argument>
+            <argument name="resourceModel" xsi:type="string">N23\Videoplayer\Model\ResourceModel\Videoplayer</argument>
+        </arguments>
+    </virtualType>
+    
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="n23_videoplayer_videoplayer_listing_data_source" xsi:type="string">N23\Videoplayer\Model\ResourceModel\Videoplayer\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="N23\Videoplayer\Model\ResourceModel\Videoplayer\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">n23_videoplayer</argument>
+            <argument name="resourceModel" xsi:type="string">N23\Videoplayer\Model\ResourceModel\Videoplayer</argument>
+        </arguments>
+    </virtualType>
+</config>

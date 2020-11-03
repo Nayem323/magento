@@ -1,0 +1,11 @@
+.admin__menu .item-n23-videoplayer.level-0 > a:before {
+    content:url('../images/n23-logo.png')
+}
+.admin__menu .item-n23-videoplayer .submenu-title{
+    font-size: 2.0rem;
+}
+.admin__menu .submenu .item-n23-videoplayer .parent .submenu-group-title {
+    display: block!important;
+}
+
+

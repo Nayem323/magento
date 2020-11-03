@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category N23
+ * @package N23\Core
+ * @author N23 <nayem323@gmail.com>
+ * @copyright Copyright (c) 2020 N23
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+	    <tab id="N23" translate="label" sortOrder="110" class="n23">
+            <label><![CDATA[<span class="n23-logo">N23</span>]]></label>
+        </tab>
+    </system>
+</config>

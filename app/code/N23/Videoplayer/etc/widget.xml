@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @category N23
+ * @package N23\Core
+ * @author Nayem
+ * @copyright Copyright (c) 2020 Nayem
+ * @license Nayem
+ */
+-->
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="video_player_widget" class="N23\Videoplayer\Block\Videoplayer">
+        <label >N23 Video Player</label>
+        <description>HTML5 Video Player</description>
+        <parameters>
+            <parameter name="video_id" xsi:type="text" required="true" visible="true">
+                <label>Video ID</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

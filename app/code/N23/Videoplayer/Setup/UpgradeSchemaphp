@@ -1,0 +1,135 @@
+<?php
+
+namespace N23\Videoplayer\Setup;
+
+use Magento\Framework\Setup\UpgradeSchemaInterface;
+use Magento\Framework\Setup\SchemaSetupInterface;
+use Magento\Framework\Setup\ModuleContextInterface;
+
+class UpgradeSchema implements UpgradeSchemaInterface
+{
+    /**
+     * Upgrades DB schema for a module
+     *
+     * @param SchemaSetupInterface $setup
+     * @param ModuleContextInterface $context
+     * @return void
+     */
+    public function upgrade(SchemaSetupInterface $setup, ModuleContextInterface $context)
+    {
+        $setup->startSetup();
+        
+        $videoplayerTable = 'n23_videoplayer';
+        $attributeOptionTable = 'eav_attribute_option_value';
+        
+        //Videoplayer Table
+        $setup->getConnection()->addColumn(
+            $setup->getTable($videoplayerTable),
+            'first_name',
+            [
+                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+                'length'=>'255',
+                'nullable' => true,
+                'comment' =>'First Name'
+
+            ]
+        );
+        $setup->getConnection()->addColumn(
+            $setup->getTable($videoplayerTable),
+            'last_name',
+            [
+                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+                'length'=>'255',
+                'nullable' => true,
+                'comment' =>'Last Name'
+
+            ]
+        );
+        $setup->getConnection()->addColumn(
+            $setup->getTable($videoplayerTable),
+            'job_title',
+            [
+                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+                'length'=>'255',
+                'nullable' => true,
+                'comment' =>'Job Title'
+
+            ]
+        );
+        $setup->getConnection()->addColumn(
+            $setup->getTable($videoplayerTable),
+            'phone',
+            [
+                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+                'length'=>'255',
+                'nullable' => true,
+                'comment' =>'Phone'
+
+            ]
+        );
+        $setup->getConnection()->addColumn(
+            $setup->getTable($videoplayerTable),
+            'ext_number',
+            [
+                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+                'length'=>'255',
+                'nullable' => true,
+                'comment' =>'Ext. Number'
+
+            ]
+        );
+        $setup->getConnection()->addColumn(
+            $setup->getTable($videoplayerTable),
+            'login',
+            [
+                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
+                'length'=>'1',
+                'default' => 0,
+                'nullable' => true,
+                'comment' =>'Login'
+
+            ]
+        );
+
+        $setup->getConnection()->addColumn(
+            $setup->getTable($videoplayerTable),
+            'token',
+            [
+                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+                'length'=>'255',
+                'nullable' => true,
+                'comment' =>'Token'
+
+            ]
+        );
+
+        $setup->getConnection()->addColumn(
+            $setup->getTable($videoplayerTable),
+            'business_type',
+            [
+                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+                'length'=>'255',
+                'nullable' => true,
+                'comment' =>'Business Type'
+
+            ]
+        );
+        
+        //Attribute Table
+
+        $setup->getConnection()->addColumn(
+            $setup->getTable($attributeOptionTable),
+            'status',
+            [
+                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
+                'length'=>'1',
+                'nullable' => false,
+                'default' => 1,
+                'comment' =>'Status'
+
+            ]
+        );
+        
+        $setup->endSetup();
+    }
+}
